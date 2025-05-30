@@ -5,9 +5,16 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Modern111Vivace';
+  src: url('../fonts/E111Viva.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -18,6 +25,7 @@ body {
   color: #828282;
   background: #fff;
 }
+
 
 #page {
   position: relative;
@@ -68,6 +76,11 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   margin: 0 0 20px 0;
 }
+h3 {
+  font-size: 40px;
+  font-family: "Modern111Vivace";
+}
+
 
 ::-webkit-selection {
   color: #fff;
@@ -103,7 +116,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Modern111Vivace", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -425,7 +438,6 @@ h1, h2, h3, h4, h5, h6, figure {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   display: block;
   padding-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span,
@@ -829,6 +841,7 @@ form label {
   display: table-cell !important;
   vertical-align: middle;
 }
+
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h1,
 #fh5co-counter .display-tc h2,
@@ -842,9 +855,9 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 100px;
-  line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-size: 95px;
+  line-height: 1.8;
+  font-family: "Modern111Vivace", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -879,9 +892,9 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
-  color: #F14E95;
+  color: #353535;
   border: none !important;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 #fh5co-header .display-tc .btn:hover,
@@ -934,16 +947,16 @@ form label {
 
 .simply-countdown {
   /* The countdown */
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: rgba(241, 78, 149, 0.8);
-  margin: 0 4px;
+  width: 90px;
+  height: 90px;
+  background: #6e8a3d;
+  margin: 0 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -967,8 +980,8 @@ form label {
   /* countdown block inner div */
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
 .simply-countdown > .simply-section .simply-amount,
@@ -979,7 +992,7 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 25px;
   /* amounts */
 }
 
@@ -999,7 +1012,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  padding: 3em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1064,69 +1077,6 @@ form label {
     width: 100%;
   }
 }
-.couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
-  font-size: 30px;
-}
-.couple-half .groom, .couple-half .bride {
-  float: left;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-.couple-half .groom img, .couple-half .bride img {
-  width: 150px;
-  height: 150px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-@media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
-    width: 100%;
-    height: 140px;
-  }
-  .couple-half .groom img, .couple-half .bride img {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
-}
-.couple-half .groom {
-  float: right;
-  margin-right: 5px;
-}
-.couple-half .bride {
-  float: left;
-  margin-left: 5px;
-}
-.couple-half .desc-groom {
-  padding-right: 180px;
-  text-align: right;
-}
-.couple-half .desc-bride {
-  padding-left: 180px;
-  text-align: left;
-}
-@media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .couple-half .desc-groom {
-    padding-right: 0;
-    text-align: center;
-  }
-  .couple-half .desc-bride {
-    padding-left: 0;
-    text-align: center;
-  }
-}
 
 .feature-center {
   text-align: center;
@@ -1165,7 +1115,6 @@ form label {
   margin-bottom: 30px;
 }
 .feature-center h3 {
-  text-transform: uppercase;
   font-size: 18px;
   color: #5d5d5d;
 }
@@ -1181,8 +1130,8 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  color: #335528;
+  font-family: "Modern111Vivace", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1321,7 +1270,6 @@ form label {
   }
 }
 .feature-left .feature-copy h3 {
-  text-transform: uppercase;
   font-size: 18px;
   color: #5d5d5d;
   margin-bottom: 10px;
@@ -1840,4 +1788,8 @@ form label {
   opacity: 0;
 }
 
+.olive {
+  color: #6e8a3d; /* Sostituisci con il colore che preferisci */
+}
 /*# sourceMappingURL=style.css.map */
+

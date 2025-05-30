@@ -115,20 +115,20 @@
      */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
-                year: 2015,
-                month: 6,
-                day: 28,
+                year: 2025,
+                month: 9,
+                day: 6,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    days: 'day',
-                    hours: 'hour',
-                    minutes: 'minute',
-                    seconds: 'second',
-                    pluralLetter: 's'
+                    days: 'giorni',
+                    hours: 'ore',
+                    minutes: 'minuti',
+                    seconds: 'secondi',
+                    pluralLetter: ''
                 },
-                plural: true,
+                plural: false,
                 inline: false,
                 enableUtc: true,
                 onEnd: function () {
@@ -155,7 +155,7 @@
 
         targetTmpDate = new Date(
             parameters.year,
-            parameters.month - 1,
+            parameters.month,
             parameters.day,
             parameters.hours,
             parameters.minutes,
@@ -164,12 +164,12 @@
 
         if (parameters.enableUtc) {
             targetDate = new Date(
-                targetTmpDate.getUTCFullYear(),
-                targetTmpDate.getUTCMonth(),
-                targetTmpDate.getUTCDate(),
-                targetTmpDate.getUTCHours(),
-                targetTmpDate.getUTCMinutes(),
-                targetTmpDate.getUTCSeconds()
+                targetTmpDate.getFullYear(),
+                targetTmpDate.getMonth(),
+                targetTmpDate.getDate(),
+                targetTmpDate.getHours(),
+                targetTmpDate.getMinutes(),
+                targetTmpDate.getSeconds()
             );
         } else {
             targetDate = targetTmpDate;
