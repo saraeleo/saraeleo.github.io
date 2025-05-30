@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6, figure {
 h3 {
   font-size: 40px;
   font-family: "Modern111Vivace";
+  color: #6e8a3d;
 }
 
 
@@ -416,7 +417,7 @@ h3 {
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 100%;
   float: left;
@@ -444,7 +445,7 @@ h3 {
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
