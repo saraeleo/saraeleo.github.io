@@ -139,7 +139,7 @@ h3 {
   display: inline;
 }
 .fh5co-nav ul li a {
-  font-size: 16px;
+  font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
@@ -1063,6 +1063,10 @@ form label {
 
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
+}
+
+.fh5co-section-pantone {
+  background: rgba(143, 103, 84, 0.3);
 }
 
 .couple-wrap {
