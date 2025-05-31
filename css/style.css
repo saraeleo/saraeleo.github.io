@@ -1865,6 +1865,8 @@ form label {
   display: block;
   transition: transform 0.3s ease;
   touch-action: manipulation;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .masonry-gallery figure.visible {
   opacity: 1;
