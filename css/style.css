@@ -55,13 +55,13 @@ body {
 }
 
 a {
-  color: #6e8a3d;
+  color: #946e48;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #6e8a3d;
+  color: #946e48;
   outline: none;
   text-decoration: none;
 }
@@ -79,23 +79,23 @@ h1, h2, h3, h4, h5, h6, figure {
 h3 {
   font-size: 40px;
   font-family: "Modern111Vivace";
-  color: #6e8a3d;
+  color: #946e48;
 }
 
 
 ::-webkit-selection {
   color: #fff;
-  background: #6e8a3d;
+  background: #946e48;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #6e8a3d;
+  background: #946e48;
 }
 
 ::selection {
   color: #fff;
-  background: #6e8a3d;
+  background: #946e48;
 }
 
 .fh5co-nav {
@@ -155,9 +155,9 @@ h3 {
 }
 .fh5co-nav ul li.has-dropdown .dropdown {
   width: 130px;
-  -webkit-box-shadow: 0px 14px 33px -9px #335528;
-  -moz-box-shadow: 0px 14px 33px -9px #335528;
-  box-shadow: 0px 14px 33px -9px #335528;
+  -webkit-box-shadow: 0px 14px 33px -9px #6a0f12;
+  -moz-box-shadow: 0px 14px 33px -9px #6a0f12;
+  box-shadow: 0px 14px 33px -9px #6a0f12;
   z-index: 1002;
   visibility: hidden;
   opacity: 0;
@@ -204,7 +204,7 @@ h3 {
   font-size: 15px;
 }
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
-  color: #335528;
+  color: #6a0f12;
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
   color: #fff;
@@ -228,9 +228,9 @@ h3 {
   border-radius: 100px;
 }
 .fh5co-nav ul li.btn-cta a:hover span {
-  -webkit-box-shadow: 0px 14px 20px -9px #335528;
-  -moz-box-shadow: 0px 14px 20px -9px #335528;
-  box-shadow: 0px 14px 20px -9px #335528;
+  -webkit-box-shadow: 0px 14px 20px -9px #6a0f12;
+  -moz-box-shadow: 0px 14px 20px -9px #6a0f12;
+  box-shadow: 0px 14px 20px -9px #6a0f12;
 }
 .fh5co-nav ul li.active > a {
   color: #fff !important;
@@ -967,7 +967,7 @@ form label {
   display: inline-block;
   width: 90px;
   height: 90px;
-  background: #6e8a3d;
+  background: #946e48;
   margin: 0 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1162,7 +1162,7 @@ form label {
   margin-bottom: 2px;
   line-height: 1.5;
   font-weight: bold;
-  color: #335528;
+  color: #6a0f12;
   font-family: "Modern111Vivace", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1289,7 +1289,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #6e8a3d;
+  color: #946e48;
 }
 .feature-left .feature-copy {
   float: left;
@@ -1354,7 +1354,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #6e8a3d;
+  background: #946e48;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1398,14 +1398,14 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #6e8a3d;
+  border: 2px solid #946e48;
 }
 
 #fh5co-offcanvas {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: #335528;
+  background: #6a0f12;
   top: 0;
   right: 0;
   top: 0;
@@ -1651,26 +1651,26 @@ form label {
 }
 
 .btn-primary {
-  background: #6e8a3d;
+  background: #946e48;
   color: #fff;
-  border: 2px solid #6e8a3d;
+  border: 2px solid #946e48;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #6e8a3d !important;
-  border-color: #6e8a3d !important;
+  background: #946e48 !important;
+  border-color: #946e48 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #6e8a3d;
-  border: 2px solid #6e8a3d;
+  color: #946e48;
+  border: 2px solid #946e48;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #6e8a3d;
+  background: #946e48;
   color: #fff;
 }
 
 .btn-success {
-  background: #6e8a3d;
+  background: #946e48;
   color: #fff;
   border: 2px solid #5cb85c;
 }
@@ -1680,8 +1680,8 @@ form label {
 }
 .btn-success.btn-outline {
   background: transparent;
-  color: #6e8a3d;
-  border: 2px solid #6e8a3d;
+  color: #946e48;
+  border: 2px solid #946e48;
 }
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
   background: #5cb85c;
@@ -1727,21 +1727,21 @@ form label {
 }
 
 .btn-danger {
-  background: #6e8a3d;
+  background: #946e48;
   color: #fff;
-  border: 2px solid #6e8a3d;
+  border: 2px solid #946e48;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #6e8a3d !important;
-  border-color: #6e8a3d !important;
+  background: #946e48 !important;
+  border-color: #946e48 !important;
 }
 .btn-danger.btn-outline {
   background: transparent;
-  color: #6e8a3d;
-  border: 2px solid #6e8a3d;
+  color: #946e48;
+  border: 2px solid #946e48;
 }
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
-  background: #6e8a3d;
+  background: #946e48;
   color: #fff;
 }
 
@@ -1795,7 +1795,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #6e8a3d;
+  border-color: #946e48;
 }
 
 .row-pb-md {
@@ -1821,7 +1821,7 @@ form label {
 }
 
 .olive {
-  color: #6e8a3d; /* Sostituisci con il colore che preferisci */
+  color: #946e48; /* Sostituisci con il colore che preferisci */
 }
 
 @media screen and (max-width: 768px) {
