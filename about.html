@@ -161,6 +161,33 @@
 		</div>
 	</div>
 
+	<div id="fh5co-couple-story"  class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<h3 class="text-center animate-box" style="color: #6a0f12">Alcuni momenti insieme</h3>
+	<div class="masonry-gallery">
+		<figure class="fade-in"><img class="clickable" src="https://saraeleo.github.io/images/sara_and_leo/143AC543-5AFA-4BBF-9360-39994DD06456.JPG" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/_L1A6907.jpeg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/_N4A6375.jpeg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/bolla.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/C1719328-03AB-449A-92C8-7CD2368C5D80.JPG" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/foto_gallipoli.JPG" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/foto mare 3.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20181215-WA0015.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20200523-WA0010.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20210806-WA0021.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20220603-WA0024.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20221024-WA0045.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20230423-WA0017.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20231101-WA0017.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20240210-WA0020.jpg" alt=""></figure>
+		<figure class="fade-in"><img class="clickable" src="images/sara_and_leo/IMG-20250323-WA0055.jpg" alt=""></figure>
+
+		<!-- Aggiungi quante immagini vuoi -->
+	  </div>
+	  </div>
+	  </div>
+	  </div>
 	
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -239,6 +266,62 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+
+	<!-- Modal -->
+<div id="modal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="modal-img">
+  </div>
+  
+  <!-- ⬇️ Inserisci qui lo script -->
+  <script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const images = document.querySelectorAll(".clickable");
+	  const modal = document.getElementById("modal");
+	  const modalImg = document.getElementById("modal-img");
+	  const closeBtn = document.querySelector(".close");
+  
+	  images.forEach(img => {
+		img.addEventListener("click", () => {
+		  modal.style.display = "block";
+		  modalImg.src = img.src;
+		});
+	  });
+  
+	  closeBtn.onclick = () => {
+		modal.style.display = "none";
+	  };
+  
+	  window.onclick = (e) => {
+		if (e.target == modal) {
+		  modal.style.display = "none";
+		}
+	  };
+	});
+  </script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const figures = document.querySelectorAll(".masonry-gallery figure");
+	
+	  const observer = new IntersectionObserver(entries => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) {
+			entry.target.classList.add("visible");
+			observer.unobserve(entry.target); // opzionale: smette di osservare dopo l'apparizione
+		  }
+		});
+	  }, {
+		threshold: 0.1
+	  });
+	
+	  figures.forEach(figure => {
+		observer.observe(figure);
+	  });
+	});
+	</script>
+
 
 	</body>
 </html>

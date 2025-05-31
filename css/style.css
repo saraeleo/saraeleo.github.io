@@ -1834,6 +1834,100 @@ form label {
     object-position: center center;
   }
 }
+/* Gallery */
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 15px;
+  padding: 20px;
+}
+
+.masonry-gallery figure:hover img {
+  transform: scale(1.08);
+  z-index: 1;
+}
+
+.masonry-gallery figure {
+  margin: 0 0 15px;
+  break-inside: avoid;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+
+
+
+.masonry-gallery img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  touch-action: manipulation;
+}
+.masonry-gallery figure.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive: cambia numero colonne */
+@media (max-width: 992px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+  .masonry-gallery figure:hover img,
+.masonry-gallery figure:active img {
+  transform: scale(1.08);
+}
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.8);}
+  to {transform: scale(1);}
+}
+
+.close {
+  position: absolute;
+  top: 20px; right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ccc;
+}
+/* Effetto ingrandimento su hover e active */
+
 
 /*# sourceMappingURL=style.css.map */
 
