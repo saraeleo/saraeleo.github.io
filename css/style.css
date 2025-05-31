@@ -875,14 +875,14 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -936,7 +936,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 #fh5co-counter .icon {
@@ -1156,7 +1156,7 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 1em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
