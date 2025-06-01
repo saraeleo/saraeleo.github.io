@@ -321,21 +321,28 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    // Target date: 6 September 2025 at 00:00:00
+    var targetDate = new Date(2025, 8, 6); // 👈 JS months are 0-based, so 8 = September
 
-    // default example
     simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
+        year: targetDate.getFullYear(),
+        month: targetDate.getMonth() , // 👈 simplyCountdown expects 1-based month
+        day: targetDate.getDate(),
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        enableUtc: true // Set to false if you want local time
     });
 
-    //jQuery example
+    // jQuery version
     $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
+        year: targetDate.getFullYear(),
+        month: targetDate.getMonth() ,
+        day: targetDate.getDate(),
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        enableUtc: true
     });
 </script>
 
